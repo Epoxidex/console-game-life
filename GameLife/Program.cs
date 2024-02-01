@@ -55,7 +55,7 @@ namespace GameLife
             Console.Write(sb.ToString());
         }
 
-        public void RandomFill(double frequency = 2)
+        public void FillRandom(double frequency = 2)
         {
             Random rnd = new Random();
             for (int i = 0; i < Height; i++)
@@ -109,7 +109,7 @@ namespace GameLife
         static void Main(string[] args)
         {
             var game = new Game(100, 20);
-            game.RandomFill(10);
+            game.FillRandom(10);
             game.RunGame();
         }
     }
